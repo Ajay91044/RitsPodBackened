@@ -1,0 +1,291 @@
+{
+    "_id": {
+      "$oid": "64ddf6a32584de649551701b"
+    },
+    "site": "RITS",
+    "handle": "PodBO:RITS,OPR_POD",
+    "type": "Operation",
+    "podName": "OPR_POD",
+    "panelLayout": "1",
+    "description": "Operation Pod",
+    "status": "Enabled",
+    "kafkaIntegration": false,
+    "kafkaId": "",
+    "sessionTimeout": 20,
+    "refreshRate": 6000,
+    "defaultOperation": "OP1",
+    "defaultResource": "_",
+    "soundWithErrorMessage": false,
+    "showHomeIcon": false,
+    "showHelpIcon": false,
+    "showLogoutIcon": false,
+    "autoExpandMessageArea": false,
+    "operationCanBeChanged": true,
+    "resourceCanBeChanged": true,
+    "showQuantity": true,
+    "documentName": "",
+    "buttonList": [
+      {
+        "sequence": "1",
+        "buttonType": "Normal",
+        "buttonId": "StartId",
+        "buttonLabel": "START",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_START_SRV",
+            "type": "UI5",
+            "url": "http://localhost:8585/rits/dccollect_app/index.html",
+            "pluginLocation": "",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "2",
+        "buttonType": "Normal",
+        "buttonId": "CompleteId",
+        "buttonLabel": "COMPLETE",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_COMPLT_SERVICE",
+            "type": "Services",
+            "url": "http://localhost:8080/app/v1/pcucomplete-service/complete",
+            "pluginLocation": "",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "3",
+        "buttonType": "Normal",
+        "buttonId": "SignOffID",
+        "buttonLabel": "SIGN OFF",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_SIGNOFF_SERVICE",
+            "type": "Services",
+            "url": "http://localhost:8080/app/v1/signoff-service/signoff",
+            "pluginLocation": "",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "4",
+        "buttonType": "Normal",
+        "buttonId": "assyId",
+        "buttonLabel": "ASSEMBLE",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "None",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_ASSY",
+            "type": "UI5",
+            "url": "http://localhost:8585/rits/assemblyPlugin_app/index.html",
+            "pluginLocation": "2",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "5",
+        "buttonType": "Normal",
+        "buttonId": "idDCCollect",
+        "buttonLabel": "DC Collect",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_DCCOLLECT",
+            "type": "UI5",
+            "url": "http://localhost:8585/rits/dccollect_app/index.html",
+            "pluginLocation": "99",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "6",
+        "buttonType": "Normal",
+        "buttonId": "idWI",
+        "buttonLabel": "Work Instruction",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "None",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_WORKINSTRUCTION_PLUGIN",
+            "type": "UI5",
+            "url": "http://localhost:8585/rits/workInstructionPlugin_app/index.html",
+            "pluginLocation": "3",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "7",
+        "buttonType": "Normal",
+        "buttonId": "CHANGE_EQUIPMENT_STATUS",
+        "buttonLabel": "CHANGE EQUIPMENT STATUS",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "Ctrl+G",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_CHANGE_EQUIPEMNT_STATUS",
+            "type": "UI5",
+            "url": "/rits/changeEquipmentStatus_app/index.html",
+            "pluginLocation": "5",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "8",
+        "buttonType": "Normal",
+        "buttonId": "SCRAP_UNSCRAP",
+        "buttonLabel": "SCRAP/UNSCRAP",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "Ctrl+G",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_SCRAP_UNSCRAP",
+            "type": "UI5",
+            "url": "/rits/scrap_app/index.html",
+            "pluginLocation": "99",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "9",
+        "buttonType": "Normal",
+        "buttonId": "LOG_BUY_OFF",
+        "buttonLabel": "LOG BUYOFF",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "Ctrl+G",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_LOG_BUYOFF",
+            "type": "UI5",
+            "url": "/rits/log_buy_off/index.html",
+            "pluginLocation": "99",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      },
+      {
+        "sequence": "10",
+        "buttonType": "Normal",
+        "buttonId": "TOOL_LOG",
+        "buttonLabel": "TOOL LOG",
+        "buttonSize": "",
+        "imageIcon": "",
+        "hotKey": "Ctrl+G",
+        "buttonLocation": "",
+        "startNewButtonRow": false,
+        "activityList": [
+          {
+            "activitySequence": "10",
+            "activity": "R_TOOL_LOG",
+            "type": "UI5",
+            "url": "/rits/tool_log/index.html",
+            "pluginLocation": "99",
+            "clearsPcu": false,
+            "fixed": false
+          }
+        ]
+      }
+    ],
+    "listOptions": [
+      {
+        "browseWorkList": "",
+        "podWorkList": "Work_List",
+        "assembleList": "",
+        "dcCollectList": "",
+        "toolList": "",
+        "workInstructionList": "WORKINSTRUCTION",
+        "dcEntryList": "",
+        "subStepList": ""
+      }
+    ],
+    "podSelection": [
+      {
+        "mainInput": "",
+        "mainInputHotKey": "Ctrl+G",
+        "defaultOperation": "OP1",
+        "defaultResource": "",
+        "sfcQueueButtonID": "",
+        "sfcInWorkButtonID": "",
+        "infoLine1": "",
+        "infoLine2": "",
+        "showOperationFirst": true,
+        "showQuantity": true,
+        "operationCanBeChanged": true,
+        "resourceCanBeChanged": true
+      }
+    ],
+    "printers": [
+      {
+        "documentPrinter": "",
+        "labelPrinter": "",
+        "travelerPrinter": ""
+      }
+    ],
+    "customDataList": [],
+    "modifiedBy": "senthil",
+    "active": 1,
+    "modifiedDateTime": {
+      "$date": "2024-05-03T11:41:31.302Z"
+    },
+    "_class": "com.rits.podservice.model.Pod"
+  }
